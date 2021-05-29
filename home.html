@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head> 
+  <link rel="stylesheet" href="design.css">
+  <title>example lang</title>
+</head>
+<body>
+	<header>
+	<center>
+	<nav>
+		<ul>
+			 <li><img src="log.png" alt="log" height="100" width="100"></li> 
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="store.html">VIDEOS</a></li>
+			<li><a href="contactus.html">CONTACT US</a></li>S		
+		</ul>	
+	</nav>
+	</center>
+	</header>
+	<div class="Slides">
+
+  <center><img class="mySlides" src="321.jpg" style="width:90%"></center>
+    <center><img class="mySlides" src="222.jpg" style="width:90%"></center>
+   <center><img class="mySlides" src="123.jpg" style="width:90%"></center>
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script><br>
+
+    <center><b><h4><font color="black"><marquee>FEATURED GIPHY</marquee></font></h4></b></center>
+
+<center>
+<img src="frog.gif" width="300" height="300"> 
+<img src="son.gif" width="300" height="300">
+<img src="twit.gif" width="300" height="300">
+
+<br>
+<img src="boy.gif" width="300" height="300">
+<img src="milos.gif" width="300" height="300">
+<img src="lion.gif" width="300" height="300">
+
+<br>
+<img src="dog.gif" width="300" height="300">
+<img src="yo.gif" width="300" height="300">
+<img src="jackie.gif" width="300" height="300">
+
+
+
+</body>
+</html>
